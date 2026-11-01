@@ -23,11 +23,25 @@ function detialsvalidation(){
 
 
     Mail.addEventListener("input" , () => {
-        Mail.value === "" ? mailError.innerHTML = "Make sure email is more than 3 characters and has @ and a." : "" 
+       if(Mail.value === ""){
+        mailError.innerHTML = "Make sure email is more than 3 characters and has @ and a.";
+        CorrectValidation.innerHTML = "";
+       }
+       else{
+        mailError.innerHTML = "";
+        CorrectValidation.innerHTML = ""
+       }
        
     })
     password.addEventListener("input" , () => {
-      password.value === "" ?  passwordError.innerHTML = "Make sure password is more than 8 characters." : ""
+      if(password.value === ""){
+        passwordError.innerHTML = "Make sure email is more than 3 characters and has @ and a.";
+        CorrectValidation.innerHTML = "";
+       }
+       else{
+        passwordError.innerHTML = "";
+        CorrectValidation.innerHTML = ""
+       }
     })
    
    
@@ -42,9 +56,11 @@ function detialsvalidation(){
              mailError.innerHTML = "Enter Valid E-Mail!";
         }
         else{
-            CorrectValidation.innerHTML = "All good to go"
+            
+        CorrectValidation.innerHTML = "All good to go";
         }
         
+      
     })
 }
 

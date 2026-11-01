@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+#detials{
+    display: grid;
+    width: 400px;
+    row-gap: 10px;
+}
+
+input{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#Submit-btn{
+    background-color: white;
+    width: 128px;
+}
